@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CSC317AddingTutor.MainPage">
+
+    <VerticalStackLayout>
+        <Label
+            Text="Math Tutor"
+            FontSize="100"
+            Padding="20"
+            Margin="0"
+            HorizontalTextAlignment="Center"
+            
+            />
+
+        <Label
+            x:Name="lblMessage"
+            Text="Try to solve the math problem below and enter your answer."
+            FontSize="30"
+            HorizontalTextAlignment="Center"
+            Margin="30, 5, 30, 50"
+            MaximumWidthRequest="600"
+            />
+
+        <HorizontalStackLayout
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            HeightRequest="130"
+            WidthRequest="450"
+            >
+            <Label
+                x:Name="lblNumber1"
+                Text="5"
+                FontSize="50"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                BackgroundColor="#555555"
+                WidthRequest="100"
+                Margin="10"
+                />
+            <Label
+                 Text="+"
+                 FontSize="50"
+                 HorizontalTextAlignment="Center"
+                 VerticalTextAlignment="Center"
+                 Margin="5"
+                />
+            <Label
+                x:Name="lblNumber2"
+                Text="2"
+                FontSize="50"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                BackgroundColor="#555555"
+                WidthRequest="100"
+                Margin="10"
+                />
+        </HorizontalStackLayout>
+
+        <Label
+            Text="="
+            FontSize="100"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            Margin="5, 0"
+            />
+
+        <HorizontalStackLayout
+            Margin="20, 20"
+            HorizontalOptions="Center"
+            >
+            <Entry
+                x:Name="txtInput"
+                Placeholder="Answer"
+                FontSize="25"
+                HorizontalTextAlignment="Center"
+                MinimumWidthRequest="200"
+                />
+            <Label
+                x:Name="lblCheckbox"
+                Text="¨"
+                FontFamily="Wingdings"
+                FontSize="110"
+                Margin="20, 0"
+                WidthRequest="100"
+                HeightRequest="80"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                />
+        </HorizontalStackLayout>
+
+        <Button
+            x:Name="btnConfirm"
+            Text="Confirm"
+            FontSize="25"
+            MaximumWidthRequest="200"
+            Clicked="ConfirmClicked"
+            />
+    </VerticalStackLayout>
+</ContentPage>
